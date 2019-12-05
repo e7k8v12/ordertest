@@ -37,6 +37,6 @@ class Order(models.Model):
         verbose_name_plural = 'Заказы'
 
     def __str__(self):
-        return str(self.number) + '(' + str(self.date) + ')'
+        return str(self.number) + '(' + str(self.customer_name) + ')'
 
 
