@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% block title %}Список заказов{% endblock %}
+{% block content %}
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">Номер заказа</th>
+            <th scope="col">Заказчик</th>
+            <th scope="col">Вид</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for o in orders %}
+            <tr onclick="location.href='{% url "order_detail" o.number %}'">
+                <th scope="row">{{ o.number }}</th>
+                <td>{{ o.customer_name }}</td>
+                <td>{{ o.type }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
