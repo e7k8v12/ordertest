@@ -26,7 +26,7 @@ SECRET_KEY = 'ehlc#%tgi27)*&7o%osl0r85oc+qor&hutwumg)xb+jxfkx=h*'
 DEBUG = True
 # DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ordertest.pythonanywhere.com']
 
 
 # Application definition
